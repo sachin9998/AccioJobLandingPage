@@ -2,6 +2,7 @@
 
 :root {
     --white: #ffffff;
+    --BLACK: #2B2F34;
     --primaryskyblue: #2F80ED;
     --grey: #DADADA;
     --grey2: #4F4F4F;
@@ -60,12 +61,22 @@ a {
     /* line-height: normal; */
 }
 
+.login-btn a {
+    color: var(--primaryskyblue);
+    /* font-size: 14px; */
+}
+
 header {
+
+    position: sticky;
+    top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin: 1.5rem 6vw;
+    margin: 1rem 6vw;
+    /* margin-top: 1.5rem; */
 }
 
 .left-nav {
@@ -103,5 +114,316 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
+}
+
+/* Banner CSS ---- */
+.banner {
+    background-color: var(--primaryskyblue);
+    position: sticky;
+}
+
+.banner p {
+    color: #FFF;
+    font-family: ABeeZee;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 21px */
+    letter-spacing: 0.28px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hero section css starts here */
+
+.hero {
+    /* width: 1440px; */
+    width: 100%;
+    height: 680px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    /* gap: 35px; */
+}
+
+
+/* Left Side */
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+    width: 70%vw;
+}
+
+.head1 {
+    color: var(--BLACK, #2B2F34);
+    font-family: ABeeZee;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+    /* 65px */
+    letter-spacing: -0.75px;
+}
+
+.head2 {
+    color: var(--primaryskyblue, #2F80ED);
+    font-family: ABeeZee;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+    /* 65px */
+    letter-spacing: -0.75px;
+}
+
+.head3 {
+    color: var(--BLACK, #2B2F34);
+    font-family: ABeeZee;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.75px;
+}
+
+.head4 {
+    color: var(--textlabelcolorscharcoal, #595959);
+    font-family: fantasy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.36px;
+}
+
+.head-icons {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 77px;
+    padding: 15px 20px;
+    /* align-items: flex-end; */
+    gap: 34px;
+
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+.main-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.main-icon-title {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-title {
+    color: var(--BLACK, #2B2F34);
+    font-family: ABeeZee;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+    /* 26px */
+}
+
+.icon-title-small {
+    color: var(--grey2);
+    /* font-family: ?????; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 18.6px */
+    letter-spacing: 0.12px;
+}
+
+.made-with-love {
+
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 23px;
+    background: #FFF;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.made-with-love p {
+
+
+    color: #525252;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    /* padding: 10px; */
+    /* 21px */
+}
+
+/* right side */
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.login-page-heading h1 {
+    color: var(--BLACK, #2B2F34);
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.48px;
+}
+
+.login-page-heading p {
+    color: #818D9D;
+    text-align: center;
+    /* font-family: ?????; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+}
+
+.student-details {
+    display: flex;
+    width: 366px;
+    padding: 14px 6px 14px 10px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 8px;
+    background: #FAFAFA;
+}
+
+.apply-now-btn {
+
+    color: var(--WHITE, #FFF);
+    font-family: ABeeZee;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+
+    display: flex;
+    width: 367px;
+    padding: 14px 6px 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    border-radius: 8px;
+    background: var(--New, linear-gradient(277deg, #992FED 0%, #2F80ED 100%));
+}
+
+.timepass {
+    font-size: 13px;
+}
+
+
+
+/* Top Companies Hiring Section */
+
+
+
+
+.placements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vw;
+
+    height: 500px;
+    border: 1px solid red;
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+
+    align-items: center;
+    /* justify-content: center; */
+    align-self: center;
+}
+
+
+.p1 {
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+
+    background: var(--New, linear-gradient(277deg, #992FED 0%, #2F80ED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p2 {
+    color: var(--BLACK, #2B2F34);
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 63px */
+    letter-spacing: -0.63px;
+}
+
+.p3 {
+    color: var(--primaryskyblue, #2F80ED);
+    font-family: ABeeZee;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.63px;
+    text-align: center;
+}
+
+.p4 {
+    color: var(--textlabelcolorscharcoal, #595959);
+    font-family: ABeeZee;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.36px;
+    text-align: center;
 }
